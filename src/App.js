@@ -25,6 +25,12 @@ class BooksApp extends Component {
       this.setState({ books })
     })
   }
+
+  //The method below will be called in BookShelfChanger Component:
+  shelfChanger = () => {
+
+  }
+  
   render() {
     console.log(this.state.books)
     return (
@@ -32,6 +38,7 @@ class BooksApp extends Component {
           <Search />
           <ListBooks
             books={this.state.books}
+            shelfChanger={this.shelfChanger}
           />
       </div>
     )
