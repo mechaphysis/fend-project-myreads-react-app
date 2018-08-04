@@ -30,7 +30,7 @@ class BooksApp extends Component {
   shelfChanger = () => {
 
   }
-  
+
   render() {
     console.log(this.state.books)
     return (
@@ -38,7 +38,6 @@ class BooksApp extends Component {
           <Search />
           <ListBooks
             books={this.state.books}
-            shelfChanger={this.shelfChanger}
           />
       </div>
     )
