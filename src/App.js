@@ -30,7 +30,9 @@ class BooksApp extends Component {
     return (
       <div className="app">
           <Search />
-          <ListBooks />
+          <ListBooks
+            books={this.state.books}
+          />
       </div>
     )
   }
