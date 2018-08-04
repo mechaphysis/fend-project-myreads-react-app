@@ -38,6 +38,7 @@ class BooksApp extends Component {
           <Search />
           <ListBooks
             books={this.state.books}
+            shelfChanger={this.shelfChanger}
           />
       </div>
     )

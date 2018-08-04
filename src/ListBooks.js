@@ -21,6 +21,7 @@ class ListBooks extends Component {
                       <li key={book.id}>
                       <Book
                         book={book}
+                        shelfChanger={this.props.shelfChanger}
                       />
                       </li>
                     ))
@@ -39,6 +40,7 @@ class ListBooks extends Component {
                       <li key={book.id}>
                       <Book
                         book={book}
+                        shelfChanger={this.props.shelfChanger}
                       />
                       </li>
                     ))
@@ -57,6 +59,7 @@ class ListBooks extends Component {
                       <li key={book.id}>
                       <Book
                         book={book}
+                        shelfChanger={this.props.shelfChanger}
                       />
                       </li>
                     ))
