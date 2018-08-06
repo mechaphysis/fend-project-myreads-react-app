@@ -78,8 +78,6 @@ class ListBooks extends Component {
         <Link className="to-search" to="/search">Add a book</Link>
         </div>
       </div>
-      // TODO: Substitute this open-search functionality for a Link component
-      // <Link className='open-search' to='/search'>Add a book</Link>
     );
   }
 }
