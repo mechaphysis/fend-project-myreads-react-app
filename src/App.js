@@ -44,11 +44,15 @@ class BooksApp extends Component {
     console.log(this.state.books)
     return (
       <div className="app">
-          <Search />
+        <Route exact path='/' render={() => (
           <ListBooks
-            books={this.state.books}
-            shelfChanger={this.shelfChanger}
+          books={this.state.books}
+          shelfChanger={this.shelfChanger}
           />
+        )}/>
+        <Route path='7search' render={() => (
+          <Search />
+        )}/>
       </div>
     )
   }
