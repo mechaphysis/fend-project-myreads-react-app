@@ -50,7 +50,7 @@ class BooksApp extends Component {
           shelfChanger={this.shelfChanger}
           />
         )}/>
-        <Route path='7search' render={() => (
+        <Route path='/search' render={() => (
           <Search />
         )}/>
       </div>
