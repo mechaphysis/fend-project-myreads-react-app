@@ -51,7 +51,8 @@ class BooksApp extends Component {
           />
         )}/>
         <Route path='/search' render={() => (
-          <Search/>
+          <Search
+          shelfChanger={this.shelfChanger}/>
         )}/>
       </div>
     )
