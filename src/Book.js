@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BookShelfChanger from './BookShelfChanger.js'
 
-//This component would be reused inside ListBooks parent component
+//This component would be reused inside ListBooks and Search parent components
 
 class Book extends Component {
   render () {

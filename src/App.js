@@ -51,7 +51,7 @@ class BooksApp extends Component {
           />
         )}/>
         <Route path='/search' render={() => (
-          <Search />
+          <Search/>
         )}/>
       </div>
     )
