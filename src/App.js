@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom'
 import * as BooksAPI from './BooksAPI'
 import './App.css'
 import Search from './Search'
@@ -28,6 +29,8 @@ class BooksApp extends Component {
 
   /* The method below will be called in BookShelfChanger Component:
    * The update method called inside comes from BooksAPI
+   * after calling update we call again getAll and we set a new state for the books
+   * that includes the change of shelf
    */
   shelfChanger = (book, shelf) => {
     BooksAPI.update(book, shelf);
