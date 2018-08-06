@@ -22,13 +22,19 @@ class BooksApp extends Component {
     //We fetch the list of books from the backend server
     //by linking this action to componentDidMount method:
     BooksAPI.getAll().then((books) => {
-      this.setState({ books })
+      this.setState({ books: books })
     })
   }
 
-  //The method below will be called in BookShelfChanger Component:
-  shelfChanger = () => {
+  /* The method below will be called in BookShelfChanger Component:
+   * The update method called inside comes from BooksAPI
+   */
+  shelfChanger = (book, shelf) => {
+    BooksAPI.update(book, shelf);
 
+    BooksAPI.getAll().then((books) => {
+      this.setState({ books: books })
+    });
   }
 
   render() {
