@@ -9,7 +9,10 @@ class Search extends Component {
     bookResults: []
 }
 
-
+{/*The updateQuery method comes from
+   the React course example "contacts app" :
+   https://github.com/udacity/reactnd-contacts-complete/blob/master/src/ListContacts.js
+   */}
   updateQuery = (query) => {
     this.setState({ query: query })
     this.searchBooksUpdate(query)
