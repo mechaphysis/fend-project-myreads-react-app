@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 import * as BooksAPI from './BooksAPI'
 import Book from './Book.js'
 
+/*The updateQuery method comes from
+   the React course example "contacts app" :
+   https://github.com/udacity/reactnd-contacts-complete/blob/master/src/ListContacts.js
+   */
+
 class Search extends Component {
   state = {
     query: '',
     bookResults: []
 }
 
-{/*The updateQuery method comes from
-   the React course example "contacts app" :
-   https://github.com/udacity/reactnd-contacts-complete/blob/master/src/ListContacts.js
-   */}
   updateQuery = (query) => {
     this.setState({ query: query })
     this.searchBooksUpdate(query)
