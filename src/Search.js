@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 import * as BooksAPI from './BooksAPI'
 import Book from './Book.js'
 
-/*The updateQuery method comes from
+/* The updateQuery method comes from
    the React course example "contacts app" :
    https://github.com/udacity/reactnd-contacts-complete/blob/master/src/ListContacts.js
    */
+/* At searchBooksUpdate() method, .error allows us to handle 
+   the errors when searching incorrect queries so that 
+   we can reset back bookResults to being an array. 
+   If we don't reset it an error would stop the app process 
+   and the user would be stuck 
+ */
 
 class Search extends Component {
   state = {
@@ -22,10 +28,6 @@ class Search extends Component {
   searchBooksUpdate = (query) => {
     if (query) {
       BooksAPI.search(query).then( (bookResults) => {
-        {/*.error allows us to handle the errors when searching
-           incorrect queries so that we can reset back bookResults
-           to being an array. If we don't reset it an error would
-           stop the app process and the user would be stuck */}
         if (bookResults.error) {
           this.setState({ bookResults: [] })
         } else {
