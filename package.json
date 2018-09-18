@@ -2,7 +2,7 @@
   "name": "fend-project-myreads-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mechaphysis.github.io/fend-project-myreads-react-app",
+  "homepage": "https://mechaphysis.github.io/fend-project-myreads-react-app/",
   "dependencies": {
     "escape-string-regexp": "^1.0.5",
     "prop-types": "^15.6.1",
